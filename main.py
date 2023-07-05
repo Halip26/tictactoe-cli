@@ -60,4 +60,4 @@ while True:
             print("It's a tie!")
             break
 
-        current_player = 2 if current_player == 1 else 1
+        current_player = -1 if current_player == 1 else 1
