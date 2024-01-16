@@ -9,7 +9,7 @@ def print_board():
     for row in board:
         print(
             " | ".join(
-                ["X" if cell == 1 else "O" if cell == -1 else " " for cell in row]
+                ["X" if cell == 1 else "O" if cell == 2 else " " for cell in row]
             )
         )
         print("-" * 9)
@@ -60,4 +60,4 @@ while True:
             print("It's a tie!")
             break
 
-        current_player = -1 if current_player == 1 else 1
+        current_player = 2 if current_player == 1 else 1
