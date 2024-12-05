@@ -38,7 +38,7 @@ def tic_tac_toe():
     while True:
         print_board()
 
-        player_choice = int(input(f"Player {current_player}, choose a square (1-9): "))
+        player_choice = int(input(f"\nPlayer {current_player}, choose a square (1-9): "))
         if 1 <= player_choice <= 9:
             if make_move(current_player, player_choice):
                 if check_winner():
